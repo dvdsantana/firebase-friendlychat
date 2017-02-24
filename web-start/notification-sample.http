@@ -1,0 +1,16 @@
+POST /fcm/send HTTP/1.1
+Host: fcm.googleapis.com
+Content-Type: application/json
+Authorization: key=AAAAiAh_hHY:APA91bG3SBhTVEYmfz1ANbhKmzsWs2FYwC3fFGjexE8HttNHqwiU85GRSf9unEdmqz4waxg5H2nF2gYUEd8qape6-znEGn1tCcn20CWNsr6hGMFaOunv-k71nyExs5nBa6-LXB53Y-YG
+
+{
+  "notification": {
+    "title": "New chat message!",
+    "body": "There is a new message in FriendlyChat, mf!",
+    "icon": "/images/profile_placeholder.png",
+    //"click_action": "http://localhost:5000"
+    "click_action": "https://friendlychat-68374.firebaseapp.com/"
+  },
+  //"to":"crK3MZHXLsY:APA91bG5aOSWFQVLw6JyGXT8bcCcC6YIkhgEkSxaA3YjQGkusMJjqerCm54_VOsJ-iFzq7v-9DCHbZV8WTcbJzk-quy0zEtYqnqBHc6HFdVbPqBp5V4J-LEDPAZ6ztiwd5NA1yH6Cl4R"
+  "to": "cE9bZM0dqeo:APA91bEsDoqg2q5tkOUnT_OT4NMXKiTQOsy4k_6OeOMXqifMKm3xvct3mVfmHFI0VaG0WLiy4uo6H7hjTFLDjflV339bjqiJTFtK3yYYbbUQRh9wkyf9a-pWBDWrIY7UgUXGRtYTjRsY"
+}
